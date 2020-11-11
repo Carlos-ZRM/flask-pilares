@@ -12,27 +12,27 @@ def db ():
   
     naruto = {
         "nombre":"Naruto Uzumaki",
-        "ruta":"static\img\septimo.gif"
+        "ruta":"static/img/septimo.gif"
         }
     sasuke = {
        "nombre":"Sasuke Uchiha",
-       "ruta":"static\img\sasuke.gif"
+       "ruta":"static/img/sasuke.gif"
         }
     sakura = {
        "nombre":"Sakura Haruno",
-       "ruta":"static\img\sakura.gif"
+       "ruta":"static/img/sakura.gif"
         }
     konan = {
        "nombre":"Konan Akatsuki",
-       "ruta":"static\img\konan.gif"
+       "ruta":"static/img/konan.gif"
         }
     itachi = {
        "nombre":"Itachi Uchiha",
-       "ruta":"static\img\itachi.gif"
+       "ruta":"static/img/itachi.gif"
         }
     obito = {
        "nombre":"Obito Uchiha",
-       "ruta":"static\img\obito.gif"
+       "ruta":"static/img/obito.gif"
         }
     li = {"naruto":naruto, "sasuke":sasuke, "sakura":sakura, "konan":konan, "itachi":itachi,
           "obito":obito}
@@ -151,4 +151,4 @@ def show_signup_form():
     #return "nombre"+nombre+"mensaje"+mensaje
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5001)

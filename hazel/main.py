@@ -12,27 +12,27 @@ def db ():
    
     bob = {
         "nombre":"Bob Esponja",
-        "ruta": "static\img\esponjin.jpg"
+        "ruta": "static/img/esponjin.jpg"
         }
     pat = {
        "nombre":"Patricio",
-       "ruta":"static\img\patricio.jpg"
+       "ruta":"static/img/patricio.jpg"
         }
     arenita = {
        "nombre":"Arenita",
-       "ruta":"static\img\mejillas.jpg",
+       "ruta":"static/img/mejillas.jpg",
         }
     ca = {
        "nombre":"Calamardo",
-       "ruta":"static\img\calamardo.jpg",
+       "ruta":"static/img/calamardo.jpg",
         }
     ga = {
        "nombre":"Gary",
-       "ruta":"static\img\gary.jpg",
+       "ruta":"static/img/gary.jpg",
         }
     don = {
        "nombre":"Don Cangrejo",
-       "ruta":"static\img\doncangrejo.jpg",
+       "ruta":"static/img/doncangrejo.jpg",
         }
     li = {"Bob Esponja":bob, "Patricio":pat, "Arenita":arenita, "Calamardo":ca, 
           "Gary":ga, "Don Cangrejo":don }
@@ -147,4 +147,4 @@ def show_signup_form():
     #return "nombre"+nombre+"mensaje"+mensaje
 
 if __name__ == '__main__':
-    app.run(debug=False, port=5000, host='0.0.0.0')
+    app.run(debug=True, port=5000, host='0.0.0.0')
